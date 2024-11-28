@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+        <ImageView
+            android:id="@+id/signupIllustration"
+            android:alpha="1"
+            android:translationY="-800dp"
+            android:layout_width="313dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="234dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/mailillustration" />
+
+        <TextView
+            android:textColor="@color/darkblue"
+            android:id="@+id/signupDescriptionText"
+            android:alpha="0"
+            android:translationX="-400dp"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir1"
+            android:paddingHorizontal="20dp"
+            android:text="Create an account to get started with Smart MailBox"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupIllustration" />
+
+        <TextView
+            android:textColor="@color/darkblue"
+            android:id="@+id/signupDescriptionText2"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/avenir1"
+            android:paddingHorizontal="20dp"
+            android:text="Start now by signing up"
+            android:textSize="16dp"
+            android:alpha="0"
+            android:translationX="-400dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupDescriptionText" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="40dp"
+            android:alpha="0"
+            android:translationY="100dp"
+            android:id="@+id/signupInputs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signupDescriptionText2">
+
+            <EditText
+                android:id="@+id/usernameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/roundedbck"
+                android:drawableLeft="@drawable/useric"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:fontFamily="@font/avenir1"
+                android:hint="Username"
+                android:textColorHint="@color/darkblue"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/emailSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/roundedbck"
+                android:drawableLeft="@drawable/emailic"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:fontFamily="@font/avenir1"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernameSignup" />
+
+            <EditText
+                android:id="@+id/passwordSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/roundedbck"
+                android:drawableLeft="@drawable/ickey"
+                android:drawablePadding="8dp"
+                android:elevation="4dp"
+                android:fontFamily="@font/avenir1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/darkblue"
+                android:textColorHint="@color/darkblue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailSignup" />
+
+            <Button
+                android:fontFamily="@font/avenir1"
+                android:textColor="@color/white"
+                android:background="@drawable/roundedbckbtn"
+                android:text="Sign Up"
+                android:id="@+id/buttonSignup"
+                android:layout_margin="16dp"
+                android:padding="12dp"
+                android:textSize="16sp"
+                android:elevation="104dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passwordSignup" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/prgsAuth37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

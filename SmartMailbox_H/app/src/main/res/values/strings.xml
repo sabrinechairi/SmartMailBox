@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Smart Mailbox</string>
+    <string name="host_ip">http://192.168.1.105</string>
+</resources>

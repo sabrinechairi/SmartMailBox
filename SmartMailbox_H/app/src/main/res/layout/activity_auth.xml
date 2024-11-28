@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".auth">
+
+
+    <ImageView
+        android:id="@+id/mailIllustration"
+        android:alpha="1"
+        android:translationY="-800dp"
+        android:layout_width="313dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="234dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mailillustration" />
+
+    <TextView
+        android:textColor="@color/darkblue"
+        android:id="@+id/descriptionText"
+        android:alpha="0"
+        android:translationX="-400dp"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir1"
+        android:paddingHorizontal="20dp"
+        android:text="This app is desired to receive notifications about your Smart MailBox "
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailIllustration" />
+
+    <TextView
+        android:textColor="@color/darkblue"
+        android:id="@+id/descriptionText2"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/avenir1"
+        android:paddingHorizontal="20dp"
+        android:text="Start now by athenticating "
+        android:textSize="16dp"
+        android:alpha="0"
+        android:translationX="-400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="40dp"
+        android:alpha="0"
+        android:translationY="100dp"
+        android:id="@+id/loginInputs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText2">
+
+        <EditText
+            android:id="@+id/usernamelogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/roundedbck"
+            android:drawableLeft="@drawable/useric"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/avenir1"
+            android:hint="username"
+            android:textColorHint="@color/darkblue"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/darkblue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/roundedbck"
+            android:drawableLeft="@drawable/ickey"
+            android:drawablePadding="8dp"
+            android:elevation="4dp"
+            android:fontFamily="@font/avenir1"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/darkblue"
+            android:textColorHint="@color/darkblue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usernamelogin" />
+
+        <Button
+            android:fontFamily="@font/avenir1"
+            android:textColor="@color/white"
+            android:background="@drawable/roundedbckbtn"
+            android:text="Login"
+            android:id="@+id/buttonLogin"
+            android:layout_margin="16dp"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:elevation="104dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordlogin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/avenir2"
+            android:text="Register Now"
+            android:id="@+id/registerNow"
+            android:layout_marginTop="20dp"
+            android:textColor="#0055D1"
+            app:layout_constraintEnd_toEndOf="@+id/buttonLogin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/prgsAuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
